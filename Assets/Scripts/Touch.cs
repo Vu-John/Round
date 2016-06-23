@@ -13,6 +13,7 @@ public class Touch : MonoBehaviour {
 	
 	}
 
+    // Button Pressed 
     public void LeftArrow() {
         player.moveright = false;
         player.moveleft = true;
@@ -23,6 +24,12 @@ public class Touch : MonoBehaviour {
         player.moveleft = false;
     }
 
+    public void Jump() {
+        player.jump = true;
+    }
+
+
+    // Button Released
     public void ReleaseLeftArrow() {
         player.moveleft = false;
     }
