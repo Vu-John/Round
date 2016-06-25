@@ -11,6 +11,9 @@ public class Controls : MonoBehaviour {
     public bool moveright;
     public bool jump;
 
+    public int gems;
+    private Animator anim;
+
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
@@ -18,6 +21,7 @@ public class Controls : MonoBehaviour {
 
     void Start () {
         player = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 	}
 
     // Tied to screen refresh rate
@@ -26,6 +30,19 @@ public class Controls : MonoBehaviour {
     }
 
     void Update () {
+        
+        // Load the next level
+        if (gems == 10) {
+            Application.LoadLevel("level2");
+        }
+
+        // Walking used for animation
+        if (player.velocity.x != 0 && onGround) {
+            anim.SetBool("Walking", true);
+        } else {
+            anim.SetBool("Walking", false);
+        }
+
         // 
         // Keyboard inputs
         //
@@ -50,7 +67,7 @@ public class Controls : MonoBehaviour {
         //
         // For touch controls
         //
-
+        
         if (moveleft) {
             player.velocity = new Vector2(-movespeed, player.velocity.y);
         }

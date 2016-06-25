@@ -47,8 +47,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\DestroyParticle.cs" />
+     <Compile Include="Assets\Scripts\Gems.cs" />
      <Compile Include="Assets\Scripts\Hazard.cs" />
      <Compile Include="Assets\Scripts\ObjectMove.cs" />
+     <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Touch.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
