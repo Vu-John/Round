@@ -7,4 +7,4 @@ Details:
 - I added to the game a moving box character which can push the player as well as act as a platform to jump on
 - Using Unity's build settings I was able to create an APK for Android
 
-<img width="873" alt="screen1" src="https://cloud.githubusercontent.com/assets/15070059/16358392/d586f7d6-3adf-11e6-906f-788c4f4d03b8.png">
+![round_screen_shots](https://cloud.githubusercontent.com/assets/15070059/16366089/90194b3a-3bdf-11e6-8b2a-56e6f0b9216b.png)
